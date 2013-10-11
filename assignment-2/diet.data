@@ -1,0 +1,13 @@
+set Foods := Rice Quinoa Tortilla Lentils Broccoli;
+set Nutrients := Carbs Proteins Fat;
+
+param costs := Rice 0.5, Quinoa 0.9, Tortilla 0.1, Lentils 0.6, Broccoli 0.4;
+param foodNutrients : Carbs Proteins Fat :=
+Rice	 53	4.4	0.4
+Quinoa	 40	8	3.6
+Tortilla 12	3	2
+Lentils	 53	12	0.9
+Broccoli 6	1.9	0.3;
+
+param lowerNutrients := Carbs 100, Proteins 10, Fat 0;
+param upperNutrients := Carbs 1000, Proteins 100, Fat 100;

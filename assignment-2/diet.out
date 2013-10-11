@@ -1,0 +1,48 @@
+Problem:    diet3
+Rows:       5
+Columns:    5
+Non-zeros:  25
+Status:     OPTIMAL
+Objective:  obj = 60 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 obj          B             60                             
+     2 bounds[Carbs]
+                    B            240           100          1000 
+     3 bounds[Proteins]
+                    B             60            10           100 
+     4 bounds[Fat]  B             40             0           100 
+     5 price_limit  NU             2                           2            30 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 units[Rice]  NL             0             0                       -10.6 
+     2 units[Quinoa]
+                    NL             0             0                         -19 
+     3 units[Tortilla]
+                    B             20             0               
+     4 units[Lentils]
+                    NL             0             0                          -6 
+     5 units[Broccoli]
+                    NL             0             0                       -10.1 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 2.22e-16 on row 5
+        max.rel.err = 4.44e-17 on row 5
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
